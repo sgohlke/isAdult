@@ -1,0 +1,38 @@
+{
+  "name": "isadult",
+  "version": "0.1.0",
+  "description": "Check if a person is an adult",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint index.js",
+    "lintFix": "eslint index.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgohlke/isAdult.git"
+  },
+  "keywords": [
+    "js",
+    "nodejs",
+    "npm",
+    "playaround"
+  ],
+  "author": "Stefan Gohlke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgohlke/isAdult/issues"
+  },
+  "homepage": "https://github.com/sgohlke/isAdult#readme",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "express": "4.17.3"
+  },
+  "engines": {
+    "node": "^16.0.0"
+  }
+}
