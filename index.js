@@ -1,10 +1,14 @@
-// Release 0.2.0
-
-function isAnAdult(age, country = 'ger') {
+/**
+ * Given an age and country, checks if the person is considered an adult in the given country.
+ * @param {number} age The age to test
+ * @param {string} country The country to test
+ * @return {boolean} true if the person is considered an adult in the country, else false
+ * */
+export function isAdultInCountry(age, country) {
   switch (country) {
-    case 'ger':
+    case 'DEU':
       return age >= 18;
-    case 'arab':
+    case 'NPL':
       return age >= 16;
     default:
       return age >= 18;
@@ -12,29 +16,12 @@ function isAnAdult(age, country = 'ger') {
 }
 
 /**
- * @deprecated Use isAnAdult() instead
+ * Given an age, checks if the person is considered an adult.
+ * @deprecated Use isAdultInCountry(age, country) instead
+ * @param {number} age The age to test
+ * @return {boolean} true if the person is considered an adult, else false
  * */
-function isAdult(age, country = 'ger') {
-  return isAnAdult(age, country);
+// eslint-disable-next-line no-unused-vars
+export function isAdult(age) {
+  return isAdultInCountry(age, 'DEU');
 }
-
-const result = isAdult(17);
-// eslint-disable-next-line no-console
-console.log('Person is an adult?', result);
-
-const express = require('express');
-const crypto = require('crypto');
-
-const app = express();
-
-crypto.generateKey('hmac', { length: 64 }, (err, key) => {
-  if (err) throw err;
-  // eslint-disable-next-line no-console
-  console.log(key.export().toString('hex')); // 46e..........620
-});
-
-app.get('/', (req, res) => {
-  res.send(`Person is an adult with 17? ${String(result)}`);
-});
-
-app.listen(3000);
