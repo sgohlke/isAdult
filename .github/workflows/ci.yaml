@@ -15,5 +15,5 @@ jobs:
       - name: Check for linting issues
         run: npm run lint
       - name: Run tests
-        run: npm run lint
+        run: npm run test
 
