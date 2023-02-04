@@ -1,12 +1,13 @@
 {
   "name": "@sgohlke/isadult",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Check if a person is an adult",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint index.js",
-    "lintfix": "eslint index.js --fix"
+    "lint": "eslint *.js",
+    "lintfix": "eslint *.js --fix",
+    "test": "node --test"
   },
   "repository": {
     "type": "git",
