@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/sgohlke/isAdult#readme",
   "devDependencies": {
-    "eslint": "8.46.0"
+    "eslint": "8.47.0"
   }
 }
