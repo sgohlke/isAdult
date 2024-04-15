@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint *.js",
-    "lintfix": "eslint *.js --fix",
+    "lint": "oxlint *.js",
+    "lintfix": "oxlint --fix *.js",
     "test": "node --test"
   },
   "repository": {
@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/sgohlke/isAdult#readme",
   "devDependencies": {
-    "eslint": "8.57.0"
+    "oxlint": "0.2.17"
   }
 }
