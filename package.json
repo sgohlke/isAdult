@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/sgohlke/isAdult#readme",
   "devDependencies": {
-    "oxlint": "0.9.3"
+    "oxlint": "0.9.5"
   }
 }
