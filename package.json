@@ -1,6 +1,6 @@
 {
   "name": "@sgohlke/isadult",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Check if a person is an adult",
   "main": "index.js",
   "type": "module",
@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/sgohlke/isAdult#readme",
   "devDependencies": {
-    "oxlint": "1.20.0"
+    "oxlint": "1.22.0"
   }
 }
